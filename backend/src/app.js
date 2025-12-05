@@ -26,7 +26,7 @@ app.get("/home", (req, res)=>{
 })
 const start = async () => {
     app.set("mongo_user")
-    const connectionDb = await mongoose.connect("mongodb+srv://maheshdhondge26_db_user:<db_password>@cluster0.kmhzes2.mongodb.net/?appName=Cluster0")
+    const connectionDb = await mongoose.connect("mongodb+srv://maheshdhondge26_db_user:57479979@cluster0.kmhzes2.mongodb.net/?appName=Cluster0")
 
     console.log(`MONGO Connected DB HOst: ${connectionDb.connection.host}`)
     server.listen(app.get("port"), () => {
